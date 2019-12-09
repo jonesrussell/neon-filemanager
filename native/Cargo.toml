@@ -15,7 +15,9 @@ neon-build = "0.3.3"
 
 [dependencies]
 neon = "0.3.3"
-serde = { version = "1.0.103", features = ["derive"] }
+neon-serde = "0.3.0"
+serde_derive = "1.0.103"
+serde = "1.0.103"
 serde_json = "1.0.44"
 glob = "0.3.0"
 
