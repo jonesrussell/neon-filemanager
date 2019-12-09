@@ -4,6 +4,8 @@ extern crate neon;
 #[macro_use]
 extern crate serde_json;
 
+extern crate glob;
+
 use glob::glob;
 use neon::prelude::*;
 use std::collections::HashSet;
@@ -30,8 +32,8 @@ fn inner_main(path: &str) -> Result<(), Box<dyn Error>> {
 }
 
 fn hello(mut cx: FunctionContext) -> JsResult<JsString> {
-    // let p = "./*";
-    // inner_main(p).expect("Unable to process");
+    let p = "./*";
+    inner_main(p).expect("Unable to process");
     Ok(cx.string("hello node"))
 }
 
