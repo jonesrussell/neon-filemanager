@@ -1,0 +1,21 @@
+[package]
+name = "neon-filemanager"
+version = "0.1.0"
+authors = ["Russell Jones <jonesrussell42@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "neon_filemanager"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.3"
+
+[dependencies]
+neon = "0.3.3"
+serde = { version = "1.0.103", features = ["derive"] }
+serde_json = "1.0.44"
+glob = "0.3.0"
+

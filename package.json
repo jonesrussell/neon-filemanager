@@ -1,0 +1,18 @@
+{
+  "name": "neon-filemanager",
+  "version": "0.1.0",
+  "description": "File manager for Electron",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonesrussell/neon-filemanager.git"
+  },
+  "author": "Russell Jones <jonesrussell42@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.3.3"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
