@@ -1,6 +1,8 @@
 native/target
 native/index.node
 native/artifacts.json
+native/Cargo.lock
+build/
 **/*~
 **/node_modules
 **/.DS_Store
