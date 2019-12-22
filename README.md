@@ -1,3 +1,4 @@
 # neon-filemanager
 
-File manager for Electron
+Rust library for performing basic file management tasks from Javascript.
+
