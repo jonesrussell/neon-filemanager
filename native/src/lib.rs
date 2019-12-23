@@ -11,7 +11,7 @@ use std::collections::HashSet;
 use std::error::Error;
 use std::path::PathBuf;
 
-fn _ls(path: &str) -> Result<serde_json::Value, Box<dyn Error>> {
+fn _ls(path: &str) {
     let mut entries: HashSet<PathBuf> = HashSet::new();
 
     for entry in glob(path).unwrap().filter_map(Result::ok) {
@@ -19,6 +19,16 @@ fn _ls(path: &str) -> Result<serde_json::Value, Box<dyn Error>> {
     }
 
     Ok(success(entries))
+
+    /*for entry in glob(path).unwrap() {
+        match entry {
+            Ok(path) => entries.insert(entry),
+
+            // if the path matched but was unreadable,
+            // thereby preventing its contents from matching
+            Err(e) => failure(),
+        };
+    }*/
 }
 
 fn success(entries: HashSet<PathBuf>) -> serde_json::Value {
@@ -30,6 +40,14 @@ fn success(entries: HashSet<PathBuf>) -> serde_json::Value {
       }
     });
 }
+
+/* fn failure() -> serde_json::Value {
+    return json!({
+        "code": 400,
+        "success": false,
+        "payload": null
+    });
+} */
 
 fn ls(mut cx: FunctionContext) -> JsResult<JsValue> {
     let p = cx.argument::<JsString>(0)?.value();
