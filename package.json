@@ -1,6 +1,6 @@
 {
   "name": "neon-filemanager",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "File manager for Electron",
   "main": "lib/index.js",
   "repository": {
