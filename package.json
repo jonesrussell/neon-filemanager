@@ -8,9 +8,6 @@
     "url": "https://github.com/jonesrussell/neon-filemanager.git"
   },
   "files": [
-    "native/Cargo.toml",
-    "native/Cargo.lock",
-    "native/src/lib.rs",
     "native/index.node",
     "lib"
   ],
