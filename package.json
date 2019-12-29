@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonesrussell/neon-filemanager.git"
+    "url": "git+https://github.com/jonesrussell/neon-filemanager.git"
   },
   "files": [
     "native/index.node",
