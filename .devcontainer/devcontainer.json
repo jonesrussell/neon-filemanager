@@ -19,7 +19,9 @@
 	"dunstontc.vscode-rust-syntax",
 	"msjsdiag.debugger-for-chrome",
 	"connorcpu.vsc-rustfmt",
-	"eamodio.gitlens"
+	"eamodio.gitlens",
+	"ms-azuretools.vscode-docker",
+	"mikestead.dotenv"
 ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
