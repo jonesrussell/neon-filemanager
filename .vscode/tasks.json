@@ -7,7 +7,9 @@
       "label": "cargo run",
       "type": "shell",
       "command": "cargo",
-      "args": ["run"],
+      "args": [
+        "run"
+      ],
       // "args": ["run", "--release", "--", "arg1"],
       "group": {
         "kind": "build",
